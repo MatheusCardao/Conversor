@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Site conversor de moedas</title>
+  </head>
+  <body>
+    <img class="logo-image" src="./assets/logo.gif" alt="site-logo" />
+    <main>
+      <label>
+        Converter <b>de</b>
+        <select class="currency-selected">
+          <option value="real">R$ Real brasileiro</option>
+        </select>
+      </label>
+
+      <label>
+        Converter <b>para</b>
+        <select class="currency-to-convert">
+          <option value="dolar">US$ Dólar americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ libra</option>
+        </select>
+      </label>
+
+      <label>
+        <b>Valor</b>
+        <input class="input-value" placeholder="$ 10.000" />
+      </label>
+
+      <button class="convert-button">Converter</button>
+
+      <section>
+        <div class="currency-box">
+          <img
+            class="first-country-flag"
+            src="./assets/Real.png"
+            alt="flag-of-the-country-you-want-to-convert"
+          />
+          <p class="currency" id="currency-first-name">Real</p>
+          <p class="currency-value-to-convert"><b>R$ 0,00</b></p>
+        </div>
+
+        <img class="arrow-img" src="./assets/arrow.png" alt="purple-arrow" />
+
+        <div class="currency-box">
+          <img
+            class="currency-country-flag"
+            src="./assets/Dolar.png"
+            alt="flag-of-the-country-you-convert-to"
+          />
+          <p class="currency" id="currency-name">Dólar americano</p>
+          <p class="currency-value-converted"><b>US$ 0,00</b></p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
